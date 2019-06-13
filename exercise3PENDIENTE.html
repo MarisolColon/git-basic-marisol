@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   #myDIV {
+          width: 100%;
+          padding: 50px 0;
+          text-align: center;
+          background-color: lightblue;
+          margin-top: 20px;
+          display: none
+        }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <button id = "button1" onclick="displayMessage()">Click</button>
+    <button id = "button2" onclick="toggle()">Click</button>
+    <button class="btn">Click</button>
+  </div>
+  <div id="myDIV">
+      This is my DIV element.    
+  </div>
+  <script>
+    function displayMessage() {
+     alert("You clicked button 1");
+    }
+    function toggle() {
+      var myDiv = document.getElementById("myDIV")
+      var display = myDiv.style.display
+      if (display === '') {
+        myDiv.style.display = "block" 
+      }else{
+        myDiv.style.display = ""
+      }
+      console.log(display)
+
+    }
+  </script>
+</body>
+</html> 

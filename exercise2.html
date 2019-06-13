@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events!</title>
+  </head>
+  <body>
+    <button onclick="requestInput()">Click me!</button>
+    <p id="user-input"></p>
+    <script>
+      console.log('Mi Codigo')
+      function requestInput() {
+        var input = prompt("Please enter some text!");
+        console.log('Request Input')
+        console.log(input)
+        var myParagraph = document.getElementById("user-input")
+        myParagraph.innerHTML = input
+      }
+    </script>
+  </body>
+</html>
